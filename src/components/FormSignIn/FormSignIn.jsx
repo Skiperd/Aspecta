@@ -6,23 +6,23 @@ import EmailImg from '../../assets/img/Icone-email.svg';
 import CadeadoImg from '../../assets/img/Icone-cadeado.svg';
 import BrasilImg from '../../assets/img/Icone-brasil.svg';
 import Button from '../Button/Button';
-import Book from '../../assets/img/bookSignUp.svg';
+import Book from '../../assets/img/SignIn.png';
 
-const Container = styled.section`
+const Container = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   max-width: 55.875rem;
-  padding: 4rem 0rem;
+  /* padding: 0rem 2rem; */
 
   &::before {
     content: '';
     position: absolute;
-    top: 208px;
-    left: -445px;
-    transform: rotate(10deg);
+    top: 406px;
+    left: -610px;
+    transform: rotate(7deg);
     height: 480px;
     width: 535px;
     background-image: url(${Book});
@@ -35,6 +35,7 @@ const Title = styled.h2`
   font-weight: 700;
   text-align: center;
   max-width: 30ch;
+  margin-bottom: 80px;
 `;
 
 const StyleDiv = styled.div`
@@ -55,6 +56,7 @@ const StyleDiv = styled.div`
   }
 
   button {
+    margin-top: 50px;
   }
 
   .politics {
@@ -64,26 +66,22 @@ const StyleDiv = styled.div`
   }
 `;
 
-const Form = () => {
+const Text = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 0rem 1rem;
+`;
+
+const FormSignIn = () => {
   return (
     <Container>
-      <Title>
-        Comece agora seu cadastro, e junte-se a nós para uma nova aventura!
-      </Title>
+      <Title>Já tem cadastro?</Title>
       <StyleDiv>
-        <Input
-          type="text"
-          id="name"
-          placeholder="*Nome completo"
-          link={LoginImg}
-          height="50px"
-          width="50px"
-          alt="Icone usuário"
-        />
         <Input
           type="email"
           id="email"
-          placeholder="*Seu melhor @e-mail"
+          placeholder="Endereço de Email"
           link={EmailImg}
           height="50px"
           width="50px"
@@ -92,38 +90,22 @@ const Form = () => {
         <Input
           type="password"
           id="password"
-          placeholder="*Senha"
+          placeholder="Senha"
           link={CadeadoImg}
           height="50px"
           width="50px"
           alt="Icone Senha"
         />
-        <Input
-          type="tel"
-          id="tel"
-          placeholder="+55 (99) 99999-9999"
-          link={BrasilImg}
-          height="50px"
-          width="50px"
-          alt="Bandeira Brasil"
-        />
-        <Button
-          width="100%"
-          height="3rem"
-          text="Criar minha conta grátis"
-          background="#A4A4A4"
-        />
-        <p>
-          Ao clicar em “Criar minha conta grátis ”, declaro que aceito as
-          <span className="politics">Políticas de Privacidade</span> e os
-          <span className="politics">Termos de Uso</span> da ASPECTA.
-        </p>
-        <p>
-          Já tenho conta <span className="politics">Fazer login</span>
-        </p>
+        <Button width="100%" height="3rem" text="Entrar" background="#7452FF" />
+        <Text>
+          <p>
+            <span className="politics">Esqueci minha senha</span>
+          </p>
+          <p>Criar conta</p>
+        </Text>
       </StyleDiv>
     </Container>
   );
 };
 
-export default Form;
+export default FormSignIn;

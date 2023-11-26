@@ -22,10 +22,6 @@ const StyledRectangle = styled.div`
   }
 `;
 
-const LogoVariante = styled(Logo)`
-  background: black;
-`;
-
 const Reactangle = () => {
   return (
     <StyledRectangle>
