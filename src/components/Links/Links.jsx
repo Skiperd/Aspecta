@@ -8,6 +8,10 @@ const OptionsHeader = styled.a`
   padding: 0.3125rem 1.25rem;
   border-radius: 1.562rem;
   cursor: pointer;
+
+  &:hover {
+    background-color: #7452ff;
+  }
 `;
 
 const Links = ({ link }) => {

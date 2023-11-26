@@ -7,7 +7,9 @@ const ImgStyle = styled.img`
 `;
 
 const ImageComponent = ({ link, width, height, alt }) => {
-  return <ImgStyle src={link} alt={alt}></ImgStyle>;
+  return (
+    <ImgStyle src={link} width={width} height={height} alt={alt}></ImgStyle>
+  );
 };
 
 export default ImageComponent;

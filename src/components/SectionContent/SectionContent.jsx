@@ -33,7 +33,12 @@ const SectionContent = () => {
       <H1>Escola online interativa</H1>
       <P>Desenvolvendo e educando crianças de forma lúdica</P>
       <SectionGrid>
-        <Button />
+        <Button
+          width="13.062rem"
+          height="3.125rem"
+          text="Explorar Recusos &#10132;"
+          background="#7452FF"
+        />
         <PlayContent />
       </SectionGrid>
     </ContentSection>
