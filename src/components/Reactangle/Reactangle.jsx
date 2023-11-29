@@ -22,7 +22,7 @@ const StyledRectangle = styled.div`
   }
 `;
 
-const Reactangle = () => {
+const RectangleLog = () => {
   return (
     <StyledRectangle>
       <Logo />
@@ -35,4 +35,4 @@ const Reactangle = () => {
   );
 };
 
-export default Reactangle;
+export default RectangleLog;

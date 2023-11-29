@@ -5,6 +5,7 @@ const Container = styled.div`
   max-width: 90rem;
   text-align: center;
   margin: 0 auto;
+  box-sizing: border-box;
 `;
 
 const GridContent = ({ children }) => {

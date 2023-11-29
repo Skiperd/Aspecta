@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 const OptionsHeader = styled.a`
-  background-color: #b8a8ff;
+  background-color: ${(props) => props.background};
   text-decoration: none;
+  color: ${(props) => props.color};
   font-family: Montserrat, Arial;
-  font-size: 1.25rem;
+  font-size: ${(props) => props.fontSize};
   padding: 0.3125rem 1.25rem;
-  border-radius: 1.562rem;
+  border-radius: ${(props) => props.borderRadius};
   cursor: pointer;
 
   &:hover {
@@ -16,8 +17,25 @@ const OptionsHeader = styled.a`
   }
 `;
 
-const Links = ({ link }) => {
-  return <OptionsHeader>{link}</OptionsHeader>;
+const Links = ({
+  background,
+  color,
+  borderRadius,
+  padding,
+  fontSize,
+  link,
+}) => {
+  return (
+    <OptionsHeader
+      padding={padding}
+      fontSize={fontSize}
+      borderRadius={borderRadius}
+      color={color}
+      background={background}
+    >
+      {link}
+    </OptionsHeader>
+  );
 };
 
 export default Links;
