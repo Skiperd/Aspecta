@@ -7,6 +7,7 @@ import CadeadoImg from '../../assets/img/Icone-cadeado.svg';
 import BrasilImg from '../../assets/img/Icone-brasil.svg';
 import Button from '../Button/Button';
 import Book from '../../assets/img/bookSignUp.svg';
+import { Link } from 'react-router-dom';
 
 const Container = styled.section`
   display: flex;
@@ -107,12 +108,14 @@ const Form = () => {
           width="50px"
           alt="Bandeira Brasil"
         />
-        <Button
-          width="100%"
-          height="3rem"
-          text="Criar minha conta grátis"
-          background="#A4A4A4"
-        />
+        <Link to="http://127.0.0.1:5500/src/pages/ExternalPage/teste-aprendizado-master/index.html">
+          <Button 
+            width="100%"
+            height="3rem"
+            text="Criar minha conta grátis"
+            background="#A4A4A4"
+          />
+        </Link>
         <p>
           Ao clicar em “Criar minha conta grátis ”, declaro que aceito as
           <span className="politics">Políticas de Privacidade</span> e os
