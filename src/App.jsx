@@ -8,11 +8,12 @@ import Info from './pages/Info/Info';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Quiz from './pages/Quiz/Info';
+import Perfil from './pages/Perfil/Perfil';
 
 function App() {
   return (
     <>
-      <Quiz />
+      <Perfil />
       {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

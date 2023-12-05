@@ -20,7 +20,7 @@ const MenuLinks = () => {
       <NavLink className="LinkStyle" to="/">
         <Links
           link={'Home'}
-          borderRadius="1.562rem"
+          radius="1.562rem"
           padding="0.3125rem 1.25rem"
           fontSize="1.25rem"
           color="black"
@@ -29,7 +29,7 @@ const MenuLinks = () => {
       </NavLink>
       <Links
         link={'Sobre'}
-        borderRadius="1.562rem"
+        radius="1.562rem"
         padding="0.3125rem 1.25rem"
         fontSize="1.25rem"
         color="black"
@@ -37,7 +37,7 @@ const MenuLinks = () => {
       />
       <Links
         link={'Preço'}
-        borderRadius="1.562rem"
+        radius="1.562rem"
         padding="0.3125rem 1.25rem"
         fontSize="1.25rem"
         color="black"
@@ -45,7 +45,7 @@ const MenuLinks = () => {
       />
       <Links
         link={'Contato'}
-        borderRadius="1.562rem"
+        radius="1.562rem"
         padding="0.3125rem 1.25rem"
         fontSize="1.25rem"
         color="black"
@@ -54,7 +54,7 @@ const MenuLinks = () => {
       <NavLink className="LinkStyle" to="/SignIn">
         <Links
           link={'Login'}
-          borderRadius="1.562rem"
+          radius="1.562rem"
           padding="0.3125rem 1.25rem"
           fontSize="1.25rem"
           color="black"
@@ -64,7 +64,7 @@ const MenuLinks = () => {
       <NavLink className="LinkStyle" to="/SignUp">
         <Links
           link={'Cadastre-se'}
-          borderRadius="1.562rem"
+          radius="1.562rem"
           padding="0.3125rem 1.25rem"
           fontSize="1.25rem"
           color="black"

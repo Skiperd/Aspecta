@@ -65,6 +65,13 @@ const StyleDiv = styled.div`
 `;
 
 const Form = () => {
+  const [usuario, setUsuario] = React.useState('');
+  const [senha, setSenha] = React.useState('');
+
+  function handleChange(event) {
+    setUsuario(event.target.value);
+  }
+  console.log(usuario);
   return (
     <Container>
       <Title>
@@ -79,6 +86,7 @@ const Form = () => {
           height="50px"
           width="50px"
           alt="Icone usuário"
+          onChange={handleChange}
         />
         <Input
           type="email"
@@ -88,6 +96,7 @@ const Form = () => {
           height="50px"
           width="50px"
           alt="Icone email"
+          onChange={handleChange}
         />
         <Input
           type="password"
@@ -97,6 +106,7 @@ const Form = () => {
           height="50px"
           width="50px"
           alt="Icone Senha"
+          onChange={handleChange}
         />
         <Input
           type="tel"
@@ -106,6 +116,7 @@ const Form = () => {
           height="50px"
           width="50px"
           alt="Bandeira Brasil"
+          onChange={handleChange}
         />
         <Button
           width="100%"

@@ -8,28 +8,22 @@ const OptionsHeader = styled.a`
   color: ${(props) => props.color};
   font-family: Montserrat, Arial;
   font-size: ${(props) => props.fontSize};
-  padding: 0.3125rem 1.25rem;
-  border-radius: ${(props) => props.borderRadius};
+  padding: ${(props) => props.padding};
+  /* padding: 0.3125rem 1.25rem; */
+  border-radius: ${(props) => props.radius};
   cursor: pointer;
 
   &:hover {
-    background-color: #7452ff;
+    text-decoration: underline;
   }
 `;
 
-const Links = ({
-  background,
-  color,
-  borderRadius,
-  padding,
-  fontSize,
-  link,
-}) => {
+const Links = ({ background, color, radius, padding, fontSize, link }) => {
   return (
     <OptionsHeader
       padding={padding}
       fontSize={fontSize}
-      borderRadius={borderRadius}
+      radius={radius}
       color={color}
       background={background}
     >

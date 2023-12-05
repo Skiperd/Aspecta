@@ -16,11 +16,16 @@ const Section = styled.section`
   }
 `;
 
-const Input = ({ type, id, placeholder, link }) => {
+const Input = ({ type, id, placeholder, link, onChange }) => {
   return (
     <Section>
       <img src={link} />
-      <input type={type} id={id} placeholder={placeholder}></input>
+      <input
+        type={type}
+        id={id}
+        placeholder={placeholder}
+        onChange={onChange}
+      ></input>
     </Section>
   );
 };
