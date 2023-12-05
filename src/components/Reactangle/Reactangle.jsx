@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from '../Logo/Logo';
+import LogoWhite from '../Logo_white/Logo_white';
 import BackToLogin from '../BackToLogin/BackToLogin';
 
 const StyledRectangle = styled.div`
@@ -25,7 +25,7 @@ const StyledRectangle = styled.div`
 const RectangleLog = () => {
   return (
     <StyledRectangle>
-      <Logo />
+      <LogoWhite />
       <p className="paragraph">
         A plataforma para você aprender com os melhores tutores, para um melhor
         aprendizado
