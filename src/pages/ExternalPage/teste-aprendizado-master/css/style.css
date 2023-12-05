@@ -162,7 +162,7 @@ margin: 0;
   -webkit-border-radius: 4px !important;
      -moz-border-radius: 4px !important;
           border-radius: 4px !important;
-  background-color: #0f203c; 
+  background-color: #7452FF; 
   border: none;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -181,7 +181,7 @@ margin: 0;
   -webkit-border-radius: 4px !important;
      -moz-border-radius: 4px !important;
           border-radius: 4px !important;
-  background-color: #0f203c; 
+  background-color: #7452FF; 
   border: none;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -220,7 +220,7 @@ margin: 0;
 }
 
 .modal-header{
-  background-color: #151f39;
+  background-color: #7452FF;
   border-radius: 5px 5px 0px 0px;
 }
 
