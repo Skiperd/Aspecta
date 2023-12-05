@@ -5,6 +5,7 @@ import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import Log from './pages/Log/Log';
 import Info from './pages/Info/Info';
+import StudentPage from './pages/StudentPage/StudentPage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Quiz from './pages/Quiz/Info';
@@ -13,15 +14,21 @@ import Perfil from './pages/Perfil/Perfil';
 function App() {
   return (
     <>
+<<<<<<< HEAD
       <Perfil />
       {/* <BrowserRouter>
+=======
+      
+      { <BrowserRouter>
+>>>>>>> ba5a0dd69e42b41eb67941985059cb69c8224f2a
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="SignUp" element={<SignUp />} />
           <Route path="SignIn" element={<SignIn />} />
+          <Route path="StudentPage" element={<StudentPage />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter> }
     </>
   );
 }
