@@ -7,6 +7,7 @@ import CadeadoImg from '../../assets/img/Icone-cadeado.svg';
 import BrasilImg from '../../assets/img/Icone-brasil.svg';
 import Button from '../Button/Button';
 import Book from '../../assets/img/SignIn.png';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -96,7 +97,9 @@ const FormSignIn = () => {
           width="50px"
           alt="Icone Senha"
         />
-        <Button width="100%" height="3rem" text="Entrar" background="#7452FF" />
+        <Link to="http://127.0.0.1:5500/src/pages/ExternalPage/teste-aprendizado-master/index.html">
+          <Button width="100%" height="3rem" text="Entrar" background="#7452FF" />
+        </Link>    
         <Text>
           <p>
             <span className="politics">Esqueci minha senha</span>

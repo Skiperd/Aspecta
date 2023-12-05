@@ -13,9 +13,9 @@ const ButtonStyle = styled.button`
   cursor: pointer;
 `;
 
-const Button = ({ text, background, width, height }) => {
+const Button = ({ text, background, width, height, onClick }) => {
   return (
-    <ButtonStyle background={background} width={width} height={height}>
+    <ButtonStyle background={background} width={width} height={height} onClick={onClick}>
       {text}
     </ButtonStyle>
   );
