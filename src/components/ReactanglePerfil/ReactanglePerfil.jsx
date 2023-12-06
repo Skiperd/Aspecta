@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from '../Logo/Logo';
+import LogoWhite from '../Logo_white/Logo_white';
 import BackToLogin from '../BackToLogin/BackToLogin';
 import Links from '../Links/Links';
 import Analitico from '../../assets/img/Analitico.svg';
@@ -18,9 +18,6 @@ const StyledRectangle = styled.section`
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
-  /* align-items: left; */
-  max-width: 28.5rem;
-  height: 55.5rem;
   background-color: #7452ff;
   border-radius: 0 1.56rem 1.56rem 0;
   word-wrap: break-word;
@@ -42,6 +39,12 @@ const FlexDisplay = styled.div`
   padding: 0.6rem;
 `;
 
+const FlexDisplay1 = styled.div`
+  display: flex;
+  padding: 0.6rem;
+  margin-left: -8px
+`;
+
 const LogoPosition = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,7 +56,7 @@ const ReactanglePerfil = () => {
   return (
     <StyledRectangle>
       <LogoPosition>
-        <Logo />
+        <LogoWhite />
       </LogoPosition>
       <FlexDisplay>
         <img src={BotaoHome} alt="Icone Home" />
@@ -77,8 +80,8 @@ const ReactanglePerfil = () => {
           background="#7452FF"
         />
       </FlexDisplay>
-      <FlexDisplay>
-        <img src={Cursos} alt="Icone de Cursos" />
+      <FlexDisplay1>
+        <img src={Cursos} alt="Icone de Cursos"/>
         <Links
           link="Cursos"
           color="white"
@@ -87,7 +90,7 @@ const ReactanglePerfil = () => {
           fontSize="1.875rem"
           background="#7452FF"
         />
-      </FlexDisplay>
+      </FlexDisplay1>
       <FlexDisplay>
         <img src={Videos} alt="Icone de Videos" />
         <Links

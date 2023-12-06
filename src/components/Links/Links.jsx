@@ -12,13 +12,13 @@ const OptionsHeader = styled.a`
   /* padding: 0.3125rem 1.25rem; */
   border-radius: ${(props) => props.radius};
   cursor: pointer;
-
+  margin: ${(props) => props.margin}
   &:hover {
     text-decoration: underline;
   }
 `;
 
-const Links = ({ background, color, radius, padding, fontSize, link }) => {
+const Links = ({ background, color, radius, padding, fontSize, link, margin }) => {
   return (
     <OptionsHeader
       padding={padding}
@@ -26,6 +26,7 @@ const Links = ({ background, color, radius, padding, fontSize, link }) => {
       radius={radius}
       color={color}
       background={background}
+      margin={margin}
     >
       {link}
     </OptionsHeader>

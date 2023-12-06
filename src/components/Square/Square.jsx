@@ -12,6 +12,7 @@ const StyleDiv = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  justify-content: space-around;
   color: ${(props) => props.color};
 `;
 const FlexDiv = styled.div`
@@ -41,6 +42,7 @@ const Square = ({
   width,
   height,
   color,
+  margin,
 }) => {
   return (
     <StyleDiv
@@ -48,12 +50,13 @@ const Square = ({
       height={height}
       width={width}
       color={color}
+      margin={margin}
     >
       <FlexDiv>
         <h1>{text}</h1>
         <p>{paragraph}</p>
       </FlexDiv>
-      <ImageComponent link={link} height="20px" width="20px" alt="grafico" />
+      <ImageComponent link={link} height="50px" width="50px"  alt="grafico" />
     </StyleDiv>
   );
 };

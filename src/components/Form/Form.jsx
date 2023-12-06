@@ -67,15 +67,6 @@ const StyleDiv = styled.div`
 `;
 
 const Form = () => {
-<<<<<<< HEAD
-  const [usuario, setUsuario] = React.useState('');
-  const [senha, setSenha] = React.useState('');
-
-  function handleChange(event) {
-    setUsuario(event.target.value);
-  }
-  console.log(usuario);
-=======
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -105,7 +96,6 @@ const Form = () => {
     console.log('Dados salvos:', formData)
   };
 
->>>>>>> ba5a0dd69e42b41eb67941985059cb69c8224f2a
   return (
     <Container>
       <Title>

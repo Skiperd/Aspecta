@@ -16,12 +16,16 @@ const FlexDiv = styled.div`
     border-radius: 10px;
     padding: 0rem 1rem;
   }
+  h1 {  
+    margin-bottom: 100px;
+    margin-top: 100px
+  }
 `;
 
 const Upper = () => {
   return (
     <FlexDiv>
-      <h1>Bem-vindo</h1>
+      <h1>Bem-vindo, Fernando.</h1>
       <span className="span">Mátricula : 01359856</span>
       <ImageComponent
         link={Notificação}

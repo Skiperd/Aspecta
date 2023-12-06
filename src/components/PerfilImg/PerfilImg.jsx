@@ -2,6 +2,7 @@ import React from 'react';
 import ImageComponent from '../ImageComponent/ImageComponent';
 import student from '../../assets/img/student.png';
 import Button from '../Button/Button';
+
 const PerfilImg = () => {
   return (
     <>

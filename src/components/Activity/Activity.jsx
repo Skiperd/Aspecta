@@ -9,7 +9,7 @@ import livros from '../../assets/img/livros.svg';
 const Flex = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 2em;
   p {
     color: black;
     text-align: left;
@@ -27,7 +27,7 @@ const Grid = styled.div`
 const Activity = () => {
   return (
     <>
-      <h3 style={{ textAlign: 'left', marginLeft: '1rem' }}>Tarefas de hoje</h3>
+      <h3 style={{ textAlign: 'left', marginLeft: '1rem' }}>Atividades</h3>
       <Grid>
         <Flex>
           <Links

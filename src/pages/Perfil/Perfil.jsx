@@ -37,6 +37,7 @@ const Direita = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 500px;
 `;
 
 const Perfil = () => {
@@ -54,16 +55,17 @@ const Perfil = () => {
                   paragraph="Defina seu plano de estudo da melhor forma"
                   background="#7452FF"
                   height="120px"
-                  width="420px"
+                  width="800px"
                   link={kindpng}
                   color="white"
+                  margin="-100px"
                 />
                 <Square
                   text="Matemática"
                   paragraph="16 hrs / 160 hrs"
                   background="#d8ccfc"
                   height="80px"
-                  width="420px"
+                  width="800px"
                   link={matematicas}
                 />
                 <Square
@@ -71,7 +73,7 @@ const Perfil = () => {
                   paragraph="5 hrs / 160 hrs"
                   background="#d8ccfc"
                   height="80px"
-                  width="420px"
+                  width="800px"
                   link={literatura}
                 />
                 <Square
@@ -79,7 +81,7 @@ const Perfil = () => {
                   paragraph="26 hrs / 160 hrs"
                   background="#d8ccfc"
                   height="80px"
-                  width="420px"
+                  width="800px"
                   link={geografia}
                 />
               </StyledFlex>
