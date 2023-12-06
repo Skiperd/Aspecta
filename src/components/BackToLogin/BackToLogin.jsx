@@ -16,7 +16,7 @@ const Section = styled.p`
 const BackToLogin = () => {
   return (
     <Section>
-      <p>VOLTAR PARA LOGIN</p>
+     
     </Section>
   );
 };

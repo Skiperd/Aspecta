@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+li{
+  list-style: none;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.navbar{
+  background-color: #7452FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svgs{
+  display: flex;
+  gap: 15px;
+  margin-left: 10px;
+}
+
+
+.svgs2{
+  display: flex;
+  width: 280px;
+  gap: 20px
+}

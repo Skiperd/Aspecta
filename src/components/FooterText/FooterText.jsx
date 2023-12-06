@@ -101,23 +101,23 @@ const FooterText = () => {
           <p>Individual</p>
           <p>
             O Programa visa facilitar o aprendizado, focando na forma que o
-            aluno se desenpenha m elhor nas aulas.
+            aluno se desenpenha melhor nas aulas.
           </p>
         </FooterItens>
         <FooterItens>
           <ImageComponent link={Lego} />
           <p>Forma lúdica</p>
           <p>
-            Motivamos as crianças a estudar com varias formas didaticas, visando
-            a melhor forma de ensino interativo.
+            Motivamos as crianças a estudar com varias formas didáticas, visando
+            a melhor forma de ensino.
           </p>
         </FooterItens>
         <FooterItens>
           <ImageComponent link={Trofeu} />
           <p>Sistema de Recompensa</p>
           <p>
-            Motivamos as crianças a estudar com a ajuda do jogos. Criando um
-            sistema que recompensa os alunos a baterem objetivos mensal
+            Incentivamos as crianças a estudar com a ajuda do jogos. Criando um
+            sistema de recompensa para os alunos baterem objetivos mensais.
           </p>
         </FooterItens>
       </FooterItensFlex>

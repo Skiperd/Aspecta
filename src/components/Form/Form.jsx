@@ -156,7 +156,7 @@ const Form = () => {
         <p>
           Ao clicar em “Criar minha conta grátis ”, declaro que aceito as
           <span className="politics">Políticas de Privacidade</span> e os
-          <span className="politics">Termos de Uso</span> da ASPECTA.
+          <span className="politics">Termos de Uso</span> do ASPECTA.
         </p>
         <p>
           Já tenho conta <span className="politics">Fazer login</span>
