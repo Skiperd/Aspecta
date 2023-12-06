@@ -9,7 +9,14 @@ import livros from '../../assets/img/livros.svg';
 const Flex = styled.div`
   display: flex;
   align-items: center;
-  gap: 2em;
+  justify-content: space-around;
+  gap: 2rem;
+`;
+
+const FlexItens = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   p {
     color: black;
     text-align: left;
@@ -20,7 +27,7 @@ const Flex = styled.div`
 const Grid = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 450px;
+  max-width: 550px;
   margin-left: 1rem;
 `;
 
@@ -63,7 +70,7 @@ const Activity = () => {
             background="white"
           />
         </Flex>
-        <Flex>
+        <FlexItens>
           <ImageComponent
             link={trofeu}
             width="30px"
@@ -72,8 +79,8 @@ const Activity = () => {
           />
           <p>Atribuir Pontos</p>
           <input type="checkbox" />
-        </Flex>
-        <Flex>
+        </FlexItens>
+        <FlexItens>
           <ImageComponent
             link={notas}
             width="30px"
@@ -82,8 +89,8 @@ const Activity = () => {
           />
           <p>Notas</p>
           <input type="checkbox" />
-        </Flex>
-        <Flex>
+        </FlexItens>
+        <FlexItens>
           <ImageComponent
             link={livros}
             width="30px"
@@ -92,7 +99,7 @@ const Activity = () => {
           />
           <p>Livros de apoio</p>
           <input type="checkbox" />
-        </Flex>
+        </FlexItens>
       </Grid>
     </>
   );

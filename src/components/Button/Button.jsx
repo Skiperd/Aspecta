@@ -7,6 +7,7 @@ const ButtonStyle = styled.button`
   /* width: 13.062rem;
   height: 3.125rem; */
   border-radius: 3.125rem;
+  font-size: 1.8rem;
   background-color: ${(props) => props.background};
   color: white;
   border: none;
@@ -15,7 +16,12 @@ const ButtonStyle = styled.button`
 
 const Button = ({ text, background, width, height, onClick }) => {
   return (
-    <ButtonStyle background={background} width={width} height={height} onClick={onClick}>
+    <ButtonStyle
+      background={background}
+      width={width}
+      height={height}
+      onClick={onClick}
+    >
       {text}
     </ButtonStyle>
   );

@@ -13,9 +13,9 @@ import Perfil from './pages/Perfil/Perfil';
 
 function App() {
   return (
-   
-     
-        <BrowserRouter>
+    <>
+      <Perfil />
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="SignUp" element={<SignUp />} />
@@ -23,9 +23,9 @@ function App() {
           <Route path="StudentPage" element={<StudentPage />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </BrowserRouter> 
-    
-  )
+      </BrowserRouter> */}
+    </>
+  );
 }
 
 export default App;

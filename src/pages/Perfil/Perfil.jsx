@@ -12,8 +12,10 @@ import geografia from '../../assets/img/geografia.svg';
 import Activity from '../../components/Activity/Activity';
 import PerfilImg from '../../components/PerfilImg/PerfilImg';
 import Progess from '../../components/Progress/Progess';
+import AcessibilityMenu from '../../components/AcessibilityMenu/AcessibilityMenu';
 
 const styledDiv = styled.div`
+  font-family: Montserrat, Arial;
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
@@ -43,6 +45,7 @@ const Direita = styled.div`
 const Perfil = () => {
   return (
     <GridContent>
+      <AcessibilityMenu />
       <FlexPrincipal>
         <ReactanglePerfil />
         <styledDiv>
@@ -58,7 +61,7 @@ const Perfil = () => {
                   width="800px"
                   link={kindpng}
                   color="white"
-                  margin="-100px"
+                  margin="-190px"
                 />
                 <Square
                   text="Matemática"
