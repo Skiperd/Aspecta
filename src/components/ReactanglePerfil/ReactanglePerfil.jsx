@@ -13,8 +13,10 @@ import BotaoHome from '../../assets/img/BotãoHome1.svg';
 import Suporte from '../../assets/img/Suporte.svg';
 import user from '../../assets/img/Parental1/user.png';
 import UserImg from '../UserImg/UserImg';
+import { NavLink } from 'react-router-dom';
 
 const StyledRectangle = styled.section`
+  font-family: Montserrat, Arial;
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;

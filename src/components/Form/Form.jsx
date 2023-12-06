@@ -9,7 +9,6 @@ import Button from '../Button/Button';
 import Book from '../../assets/img/bookSignUp.svg';
 import { Link } from 'react-router-dom';
 
-
 const Container = styled.section`
   display: flex;
   position: relative;
@@ -67,15 +66,11 @@ const StyleDiv = styled.div`
 `;
 
 const Form = () => {
-<<<<<<< HEAD
   const [usuario, setUsuario] = React.useState('');
   const [senha, setSenha] = React.useState('');
 
-  function handleChange(event) {
-    setUsuario(event.target.value);
-  }
   console.log(usuario);
-=======
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -85,34 +80,32 @@ const Form = () => {
   console.log();
   const [buttonColor, setButtonColor] = useState('#A4A4A4');
 
- const handleChange = (e) => {
+  const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [id]: value,
     }));
 
-
-    const allFieldsFilled = Object.values(formData).every((field) => field.trim() !== '');
-    
+    const allFieldsFilled = Object.values(formData).every(
+      (field) => field.trim() !== '',
+    );
 
     setButtonColor(allFieldsFilled ? '#7452ff' : '#A4A4A4');
   };
-  
- 
+
   const handleCreateAccount = () => {
     localStorage.setItem('userData', JSON.stringify(formData));
-    console.log('Dados salvos:', formData)
+    console.log('Dados salvos:', formData);
   };
 
->>>>>>> ba5a0dd69e42b41eb67941985059cb69c8224f2a
   return (
     <Container>
       <Title>
         Comece agora seu cadastro, e junte-se a nós para uma nova aventura!
       </Title>
       <StyleDiv>
-      <Input
+        <Input
           type="text"
           id="name"
           placeholder="*Nome completo"
@@ -152,16 +145,15 @@ const Form = () => {
           alt="Bandeira Brasil"
           onChange={handleChange}
         />
-        <Link to="/SignIn" >
+        <Link to="/SignIn">
           <Button
-          width="100%"
-          height="3rem"
-          text="Criar minha conta grátis"
-          background={buttonColor}
-          onClick={handleCreateAccount}
+            width="100%"
+            height="3rem"
+            text="Criar minha conta grátis"
+            background={buttonColor}
+            onClick={handleCreateAccount}
           />
         </Link>
-      
 
         <p>
           Ao clicar em “Criar minha conta grátis ”, declaro que aceito as
