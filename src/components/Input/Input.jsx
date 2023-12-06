@@ -15,6 +15,7 @@ const Section = styled.section`
     margin: 1.2rem 0rem;
   }
 `;
+
 const Input = ({ type, id, placeholder, link, onChange }) => {
   return (
     <Section>
