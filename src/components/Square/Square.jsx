@@ -50,13 +50,18 @@ const Square = ({
       height={height}
       width={width}
       color={color}
-      margin={margin}
     >
       <FlexDiv>
         <h1>{text}</h1>
         <p>{paragraph}</p>
       </FlexDiv>
-      <ImageComponent link={link} height="50px" width="50px"  alt="grafico" />
+      <ImageComponent
+        link={link}
+        height="50px"
+        width="50px"
+        alt="grafico"
+        margin={margin}
+      />
     </StyleDiv>
   );
 };

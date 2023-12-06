@@ -7,7 +7,7 @@ import relogio from '../../assets/img/relogio.png';
 
 const DivStyled = styled.div`
   margin-left: 2rem;
-  width: 300px;
+  width: 400px;
   height: 280px;
   background: #d8ccfc;
   display: flex;
@@ -19,7 +19,7 @@ const DivStyled = styled.div`
 `;
 
 const Section = styled.section`
-  width: 260px;
+  width: 360px;
   display: flex;
   border-radius: 10px;
   background-color: white;
@@ -51,7 +51,7 @@ const StyledFlex = styled.div`
 const Progess = () => {
   return (
     <DivStyled>
-      <Text>Seu progresso</Text>
+      <Text>Seu Progresso</Text>
       <Section>
         <StyledDiv>
           <StyledFlex>

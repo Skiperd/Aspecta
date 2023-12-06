@@ -61,7 +61,7 @@ const Perfil = () => {
                   width="800px"
                   link={kindpng}
                   color="white"
-                  margin="-100px"
+                  margin="-190px"
                 />
                 <Square
                   text="Matemática"

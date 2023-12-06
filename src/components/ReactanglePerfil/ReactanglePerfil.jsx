@@ -44,7 +44,7 @@ const FlexDisplay = styled.div`
 const FlexDisplay1 = styled.div`
   display: flex;
   padding: 0.6rem;
-  margin-left: -8px
+  margin-left: -8px;
 `;
 
 const LogoPosition = styled.div`
@@ -83,7 +83,7 @@ const ReactanglePerfil = () => {
         />
       </FlexDisplay>
       <FlexDisplay1>
-        <img src={Cursos} alt="Icone de Cursos"/>
+        <img src={Cursos} alt="Icone de Cursos" />
         <Links
           link="Cursos"
           color="white"
@@ -107,7 +107,7 @@ const ReactanglePerfil = () => {
       <FlexDisplay>
         <img src={Analitico} alt="Icone de Analitics" />
         <Links
-          link="Analitics"
+          link="Histórico"
           color="white"
           borderRadius="0"
           padding="1rem"
@@ -140,7 +140,7 @@ const ReactanglePerfil = () => {
       <FlexDisplay>
         <img src={sair} alt="Icone de sair" />
         <Links
-          link="Log Out"
+          link="Sair"
           color="white"
           borderRadius="0"
           padding="1rem"

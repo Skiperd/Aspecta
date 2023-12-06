@@ -14,7 +14,7 @@ const FlexDiv = styled.div`
     font-family: Montserrat, Arial;
     background-color: #d8ccfc;
     border-radius: 10px;
-    padding: 0rem 1rem;
+    padding: 0.4rem 2rem;
   }
   h1 {
     margin-bottom: 100px;
@@ -26,7 +26,9 @@ const Upper = () => {
   return (
     <FlexDiv>
       <h1>Bem-vindo, Fernando.</h1>
-      <span className="span">Mátricula : 01359856</span>
+      <span className="span">
+        Mátricula : <span style={{ color: '#7452FF' }}>01359856</span>
+      </span>
       <ImageComponent
         link={Notificação}
         height="30px"
